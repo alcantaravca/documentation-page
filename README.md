@@ -31,7 +31,7 @@
 <br>
 
 <p align="center">
-  <img alt="Vaccine Form Project" src=".github/preview.png" width="100%">
+  <img alt="Documentation Page Project" src=".github/preview-documentation-page.png" width="100%">
 </p>
 
 ## 📘 About
