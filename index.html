@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+      <nav id="navbar">
+      <header>Python Specs</header>
+      <ul>
+      <li><a class="nav-link" href="#introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#hello_world">Hello World</a></li>
+      <li><a class="nav-link" href="#variables">Variables</a></li>
+      <li><a class="nav-link" href="#creating_python_variables">Creating Python Variables</a></li>
+      <li><a class="nav-link" href="#python_local_variable">Python Local Variable</a></li>
+      <li><a class="nav-link" href="#python_global_variable">Python Global Variable</a></li>
+       <li><a class="nav-link" href="#python_variable_names">Python Variable Names</a></li>
+       <li><a class="nav-link" href="#data_types">Data Types</a></li>
+       <li><a class="nav-link" href="#operators">Operators</a></li>
+       <li><a class="nav-link" href="#decision_making">Decision Making</a></li>
+       <li><a class="nav-link" href="#loops">Loops</a></li>
+       <li><a class="nav-link" href="#list">List</a></li>
+       <li><a class="nav-link" href="#function">Function</a></li>
+       <li><a class="nav-link" href="#module">Module</a></li>
+       <li><a class="nav-link" href="#reference">Reference</a></li>
+       </ul>
+      </nav>
+    <main id="main-doc">
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>Python is an easy to learn, powerful programming language. It has efficient high-level data structures and a simple but effective approach to object-oriented programming. Python’s elegant syntax and dynamic typing, together with its interpreted nature, make it an ideal language for scripting and rapid application development in many areas on most platforms.
+</p>
+<p>
+The Python interpreter and the extensive standard library are freely available in source or binary form for all major platforms from the Python web site, <a href="https://www.python.org/">python.org</a>, and may be freely distributed. The same site also contains distributions of and pointers to many free third party Python modules, programs and tools, and additional documentation.
+</p>
+<p>
+The Python interpreter is easily extended with new functions and data types implemented in C or C++ (or other languages callable from C). Python is also suitable as an extension language for customizable applications.
+</p>
+
+<p>Python is commonly used for:</p>
+  <ul>
+    <li> developing websites;</li>
+    <li>developing software;</li>
+    <li>task automation;</li>
+    <li> data analysis; and</li>  
+    <li>data visualization.</li>
+  </ul>
+
+      </section>
+      <section class="main-section" id="hello_world">
+        <header>Hello World</header>
+        <p>Python is a very simple language, and has a very straightforward syntax. It encourages programmers to program without boilerplate (prepared) code. The simplest directive in Python is the "print" directive - it simply prints out a line (and also includes a newline, unlike in C).</p>
+        <p>In Python 3, programming a “Hello World” message is as easy as typing print(‘Hello World’) into the Python console:</p>
+        <code>>>> print(‘Hello World’)</code>
+        <br>
+      </section>
+      <section class="main-section" id="variables">
+        <header>Variables</header>
+        <p>Python variables are the reserved memory locations used to store values with in a Python Program. This means that when you create a variable you reserve some space in the memory.</p>
+        <p>Based on the data type of a variable, Python interpreter allocates memory and decides what can be stored in the reserved memory. Therefore, by assigning different data types to Python variables, you can store integers, decimals or characters in these variables.</p>
+      </section>
+      <section class="main-section" id="creating_python_variables">
+        <header>Creating Python Variables</header>
+        <p>Python variables do not need explicit declaration to reserve memory space or you can say to create a variable. A Python variable is created automatically when you assign a value to it. The equal sign (=) is used to assign values to variables.</p>
+        <p>The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example:</p>
+        <pre><code>counter = 100   # Creates an integer variable
+miles   = 1000.0    # Creates a floating point variable
+name    = "Zara Ali"   # Creates a string variable</code></pre>
+      </section>
+      <section class="main-section" id="python_local_variable">
+        <header>Python Local Variable</header>
+        <p>Python Local Variables are defined inside a function. We can not access variable outside the function.</p>
+        <code>A Python functions is a piece of reusable code.</code>
+        <p>Following is an example to show the usage of local variables:</p>
+        <pre><code>def sum(x,y):
+   sum = x
+ + y
+   return sum
+print(sum(5, 10))</code></pre>
+        <br>
+        <code>15</code>
+      </section>
+       <section class="main-section" id="python_global_variable">
+        <header>Python Global Variable</header>
+        <p>Any variable created outside a function can be accessed within any function and so they have global scope. Following is an example of global variables:</p>
+        <pre><code>x = 5
+y = 10
+def sum():
+   sum = x + y
+   return sum
+print(sum())</code></pre>
+        <p>This will produce the following result:</p>
+        <code>15</code>
+      </section>
+        <section class="main-section" id="python_variable_names">
+        <header>Python Variable Names</header>
+        <p>Every Python variable should have a unique name like a, b, c. A variable name can be meaningful like color, age, name etc. There are certain rules which should be taken care while naming a Python variable:</p>
+        <ul>
+          <li>A variable name must start with a letter or the underscore character</li>
+          <li>A variable name cannot start with a number or any special character like $, (, * % etc.</li>
+          <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+          <li>Python variable names are case-sensitive which means Name and NAME are two different variables in Python.</li>
+          <li>Python reserved keywords cannot be used naming the variable.</li>
+        </ul>
+        <h3 class="emphasis">Example</h3>
+        <p>Following are valid Python variable names:</p>
+        <pre><code>counter = 100
+_count  = 100
+name1 = "Zara"
+name2 = "Nuha"
+Age  = 20
+zara_salary = 100000
+
+print (counter)
+print (_count)
+print (name1)
+print (name2)
+print (Age)
+print (zara_salary)</code></pre>
+      <p>This will produce the following result:</p>
+      <pre><code>100
+100
+Zara
+Nuha
+20
+100000
+</code></pre>
+      <h3 class="emphasis">Example</h3>
+      <p>Following are invalid Python variable names:</p>
+      <pre><code>1counter = 100
+$_count  = 100
+zara-salary = 100000
+
+print (1counter)
+print ($count)
+print (zara-salary)</code></pre>
+      <p>This will produce the following result:</p>
+      <pre><code>File "main.py", line 3
+    1counter = 100
+           ^
+SyntaxError: invalid syntax</code></pre>
+      </section>  
+      <section class="main-section" id="data_types">
+        <header>Data Types</header>
+        <p>Python Data Types are used to define the type of a variable. It defines what type of data we are going to store in a variable. The data stored in memory can be of many types. For example, a person's age is stored as a numeric value and his or her address is stored as alphanumeric characters.</p>
+        <p>Python has various built-in data types:</p>
+        <ul>
+          <li>Numeric - int, float, complex
+            <ul>
+              <li class="li-emphasis">Python numeric data types store numeric values. Number objects are created when you assign a value to them.</li>
+            </ul>
+          </li>
+          <li>String - str
+            <ul>
+              <li class="li-emphasis">Python Strings are identified as a contiguous set of characters represented in the quotation marks. Python allows for either pairs of single or double quotes. Subsets of strings can be taken using the slice operator ([ ] and [:] ) with indexes starting at 0 in the beginning of the string and working their way from -1 at the end. The plus (+) sign is the string concatenation operator and the asterisk (*) is the repetition operator in Python.</li>
+            </ul>
+          </li>
+          <li>Sequence - list, tuple, range
+            <ul>
+              <li class="li-emphasis">Python Lists are the most versatile compound data types. A Python list contains items separated by commas and enclosed within square brackets ([]). To some extent, Python lists are similar to arrays in C. One difference between them is that all the items belonging to a Python list can be of different data type where as C array can store elements related to a particular data type.
+
+The values stored in a Python list can be accessed using the slice operator ([ ] and [:]) with indexes starting at 0 in the beginning of the list and working their way to end -1. The plus (+) sign is the list concatenation operator, and the asterisk (*) is the repetition operator.</li>
+              <li class="li-emphasis">Python tuple is another sequence data type that is similar to a list. A Python tuple consists of a number of values separated by commas. Unlike lists, however, tuples are enclosed within parentheses.
+
+The main differences between lists and tuples are: Lists are enclosed in brackets ( [ ] ) and their elements and size can be changed, while tuples are enclosed in parentheses ( ( ) ) and cannot be updated. Tuples can be thought of as read-only lists.</li>
+              <li class="li-emphasis">Python range() is an in-built function in Python which returns a sequence of numbers starting from 0 and increments to 1 until it reaches a specified number.
+
+We use range() function with for and while loop to generate a sequence of numbers.</li>
+            </ul>
+          </li>
+          <li>Binary - bytes, bytearray, memoryview</li>
+          <li>Mapping - dict
+            <ul>
+              <li class="li-emphasis">Python dictionaries are kind of hash table type. They work like associative arrays or hashes found in Perl and consist of key-value pairs. A dictionary key can be almost any Python type, but are usually numbers or strings. Values, on the other hand, can be any arbitrary Python object.
+
+Dictionaries are enclosed by curly braces ({ }) and values can be assigned and accessed using square braces ([]).</li>
+            </ul>
+          </li>
+          <li>Boolean - bool
+            <ul>
+              <li class="li-emphasis">Python boolean type is one of built-in data types which represents one of the two values either True or False. Python bool() function allows you to evaluate the value of any expression and returns either True or False based on the expression.</li>
+            </ul>
+          </li>  
+          <li>Set - set, frozenset</li>
+          <li>None - NoneType</li>
+        </ul>
+      </section>
+      <section class="main-section" id="operators">
+        <header>Operators</header>
+        <p>Python operators are the constructs which can manipulate the value of operands. These are symbols used for the purpose of logical, arithmetic and various other operations.</p>
+        <p>Consider the expression 4 + 5 = 9. Here, 4 and 5 are called <strong>operands</strong> and + is called <strong>operator</strong>.
+        <h3 class="emphasis">Types of Python Operators</h3>
+        <p>Python language supports the following types of operators.</p>
+        <ul>
+          <li>Arithmetic Operators
+            <ul>
+              <li class="li-emphasis">Python arithmetic operators are used to perform mathematical operations on numerical values. These operations are Addition, Subtraction, Multiplication, Division, Modulus, Expoents and Floor Division.</li>
+              </ul>
+            </li>
+          <li>Comparison (Relational) Operators
+            <ul>
+              <li class="li-emphasis">Python comparison operators compare the values on either sides of them and decide the relation among them. They are also called relational operators. These operators are equal, not equal, greater than, less than, greater than or equal to and less than or equal to.</li>
+              </ul>
+            </li>
+          <li>Assignment Operators
+            <ul>
+              <li class="li-emphasis">Python assignment operators are used to assign values to variables. These operators include simple assignment operator, addition assign, subtraction assign, multiplication assign, division and assign operators etc.</li>
+              </ul>
+            </li>
+            <li>Logical Operators
+              <ul>
+                <li class="li-emphasis">There are following logical operators supported by Python language: AND, OR and NOT.</li>
+              </ul>
+            </li>
+            <li>Bitwise Operators
+              <ul>
+                <li class="li-emphasis">Bitwise operator works on bits and performs bit by bit operation. Assume if a = 60; and b = 13; Now in the binary format their values will be 0011 1100 and 0000 1101 respectively. Following table lists out the bitwise operators supported by Python language with an example each in those, we use the above two variables (a and b) as operands − a = 0011 1100 and b = 0000 1101.</li>
+                </ul>
+              </li>
+            <li>Membership Operators
+              <ul>
+                <li class="li-emphasis">Python’s membership operators test for membership in a sequence, such as strings, lists, or tuples. There are two membership operators: IN and NOT IN.</li>
+              </ul>
+            </li>
+            <li>Identity Operators 
+              <ul>
+                <li class="li-emphasis">Identity operators compare the memory locations of two objects. There are two Identity operators: IS and IS NOT.</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+        <section class="main-section" id="decision_making">
+          <header>Decision Making</header> 
+          <p>Decision making is anticipation of conditions occurring while execution of the program and specifying actions taken according to the conditions.</p>
+          <p>Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. You need to determine which action to take and which statements to execute if outcome is TRUE or FALSE otherwise.</p>
+          <p>Following is the general form of a typical decision making structure found in most of the programming languages −</p>
+          <figure>
+           <img src="https://www.tutorialspoint.com/python/images/decision_making.jpg" alt="Decision making diagram">
+          </figure>
+          <p>Python programming language assumes any <strong>non-zero</strong> and <strong>non-null</strong> values as TRUE, and if it is either <strong>zero</strong> or <strong>null</strong>, then it is assumed as FALSE value.</p>
+          <p>Python programming language provides following types of decision making statements:</p>
+          <ul>
+            <li>if statements
+              <ul>
+                <li class="li-emphasis">An <strong>if statement</strong> consists of a boolean expression followed by one or more statements.</li>
+              </ul>
+            </li>
+            <li>if...else statements
+              <ul>
+                <li class="li-emphasis">An <strong>if statement</strong> can be followed by an optional <strong>else statement</strong>, which executes when the boolean expression is FALSE.</li>
+              </ul>
+            </li>
+            <li>nested if statements
+               <ul>
+                <li class="li-emphasis">You can use one <strong>if</strong> or <strong>else if</strong> statement inside another <strong>if</strong> or <strong>else if</strong> statement(s).</li>
+              </ul>
+              </li>
+            </ul>
+        </section>     
+        <section class="main-section" id="loops">
+        <header>Loops</header>
+          <p>In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several number of times.</p>
+          <p>Programming languages provide various control structures that allow for more complicated execution paths.</p>
+          <p>A loop statement allows us to execute a statement or group of statements multiple times. The following diagram illustrates a loop statement:</p>
+          <figure>
+           <img src="https://www.tutorialspoint.com/python/images/loop_architecture.jpg" alt="Loop diagram">
+          </figure>
+          <p>Python programming language provides following types of loops to handle looping requirements:</p>
+          <ul>
+            <li>while loop
+              <ul>
+                <li class="li-emphasis">Repeats a statement or group of statements while a given condition is TRUE. It tests the condition before executing the loop body.</li>
+              </ul>
+            </li>
+            <li>for loop
+              <ul>
+                <li class="li-emphasis">Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.</li>
+              </ul>
+            </li>
+            <li>nested loops
+              <ul>
+                <li class="li-emphasis">You can use one or more loop inside any another while, for or do..while loop.</li>
+              </ul>
+            </li>
+            </ul>
+        </section>
+         <section class="main-section" id="list">
+          <header>List</header>
+          <p>The most basic data structure in Python is the sequence. Each element of a sequence is assigned a number - its position or index. The first index is zero, the second index is one, and so forth.
+          <p>Python has six built-in types of sequences, but the most common ones are lists and tuples, which we would see in this tutorial.
+          <p>There are certain things you can do with all sequence types. These operations include indexing, slicing, adding, multiplying, and checking for membership. In addition, Python has built-in functions for finding the length of a sequence and for finding its largest and smallest elements.</p>
+          <h3 class="emphasis">Python Lists</h3>  
+          <p>The list is a most versatile datatype available in Python which can be written as a list of comma-separated values (items) between square brackets. Important thing about a list is that items in a list need not be of the same type.</p>
+          <p>Creating a list is as simple as putting different comma-separated values between square brackets. For example −</p>
+          <pre><code>list1 = ['physics', 'chemistry', 1997, 2000];
+list2 = [1, 2, 3, 4, 5 ];
+list3 = ["a", "b", "c", "d"]</code></pre>
+        </section>
+        <section class="main-section" id="function">
+          <header>Function</header>
+          <p>A function is a block of organized, reusable code that is used to perform a single, related action. Functions provide better modularity for your application and a high degree of code reusing.</p>
+          <p>As you already know, Python gives you many built-in functions like print(), etc. but you can also create your own functions. These functions are called user-defined functions.</p>
+          <h3 class="emphasis">Defining a Function</h3>
+          <p>You can define functions to provide the required functionality. Here are simple rules to define a function in Python.</p>
+          <ul>
+            <li>Function blocks begin with the keyword def followed by the function name and parentheses ( ( ) ).</li>
+            <li>Any input parameters or arguments should be placed within these parentheses. You can also define parameters inside these parentheses.</li>
+            <li>The first statement of a function can be an optional statement - the documentation string of the function or docstring.</li>
+            <li>The code block within every function starts with a colon (:) and is indented.</li>
+            <li>The statement return [expression] exits a function, optionally passing back an expression to the caller. A return statement with no arguments is the same as return None.</li>
+            </ul>
+            <h3 class="emphasis">Syntax</h3>
+            <pre><code>def functionname( parameters ):
+   "function_docstring"
+   function_suite
+   return [expression]</code></pre>
+            <p>By default, parameters have a positional behavior and you need to inform them in the same order that they were defined.</p>
+            <h3 class="emphasis">Example</h3>
+            <p>The following function takes a string as input parameter and prints it on standard screen.</p>
+            <pre><code>def printme( str ):
+   "This prints a passed string into this function"
+   print str
+   return
+</code></pre>
+            <h3 class="emphasis">Calling a Function</h3>
+            <p>Defining a function only gives it a name, specifies the parameters that are to be included in the function and structures the blocks of code.</p>
+            <p>Once the basic structure of a function is finalized, you can execute it by calling it from another function or directly from the Python prompt.</p>
+        </section>
+        <section class="main-section" id="module">
+          <header>Module</header>
+            <p>A module allows you to logically organize your Python code. Grouping related code into a module makes the code easier to understand and use. A module is a Python object with arbitrarily named attributes that you can bind and reference.</p>
+            <p>Simply, a module is a file consisting of Python code. A module can define functions, classes and variables. A module can also include runnable code.</p>
+            <h3 class="emphasis">Example</h3>
+            <p>The Python code for a module named aname normally resides in a file named aname.py. Here's an example of a simple module, support.py</p>
+            <pre><code>def print_func( par ):
+   print "Hello : ", par
+   return</code></pre>
+            <h3 class="emphasis">The import Statement</h3>
+            <p>You can use any Python source file as a module by executing an import statement in some other Python source file. The import has the following syntax −</p>
+            <pre><code>import module1[, module2[,... moduleN]</code></pre>
+            <p>When the interpreter encounters an import statement, it imports the module if the module is present in the search path. A search path is a list of directories that the interpreter searches before importing a module. For example, to import the module support.py, you need to put the following command at the top of the script −</p>
+            <pre><code>#!/usr/bin/python
+
+# Import module support
+import support
+
+# Now you can call defined function that module as follows
+support.print_func("Zara")</code></pre>
+            <p>When the above code is executed, it produces the following result −</p>
+            <pre><code>Hello : Zara</code></pre>
+            <p>A module is loaded only once, regardless of the number of times it is imported. This prevents the module execution from happening over and over again if multiple imports occur.</p>
+        </section>
+        <section class="main-section" id="reference">
+          <header>Reference</header>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/python">Tutorialspoint</a>.</li>
+          </ul>
+        </section>
+    </main>
+  </body>
+</html>
